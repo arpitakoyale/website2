@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velora | Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fafafa;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .container:hover {
+      box-shadow: 0 10px 20px rgba(243, 92, 195, 0.437);
+      transform: translateY(-5px);
+    }
+    .contact-form, .contact-info {
+      flex: 1;
+      padding: 40px;
+    }
+    .contact-form h2 {
+      margin-bottom: 30px;
+      color: #b71c1c;
+      font-size: 28px;
+      text-align: center;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 12px 12px 0;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-bottom-color: #b71c1c;
+    }
+    .form-group label {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      color: #888;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.3s ease all;
+    }
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label {
+      top: -10px;
+      font-size: 13px;
+      color: #b71c1c;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .contact-form button {
+      background-color: #b71c1c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background-color: #8e0000;
+    }
+    .contact-info {
+      background-color: #ffeaea;
+    }
+    .contact-info h2 {
+      font-size: 26px;
+      color: #b71c1c;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .info-item {
+      margin-bottom: 20px;
+    }
+    .info-item label {
+      display: block;
+      font-weight: bold;
+      color: #b71c1c;
+      margin-bottom: 5px;
+    }
+    .info-item span {
+      color: #333;
+      font-size: 16px;
+    }
+    .map {
+      max-width: 1000px;
+      margin: 30px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navcontent" style="background-color: rgba(183, 28, 28, 0.1); border-bottom: 1px solid #ccc;">
+    <header>
+      <div class="navbar">
+        <nav id="nav">
+        <ul>
+               <li><a href="#">Home</a></li>
+      <li><a href="collection1.html">Collections</a></li>
+      <li><a href="about us.html">About us</a></li>
+      <li><a href="contanct.html">Contact</a></li>
+       <li><a href="feedbackform.html">Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="container">
+    <div class="contact-form">
+        <h2>💌 Get in Touch with Velora</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " required />
+          <label for="name">Your Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required />
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>📞 Contact Information</h2>
+
+      <div class="info-item">
+        <label>Brand:</label>
+        <span>VELORA</span>
+      </div>
+
+      <div class="info-item">
+        <label>Email:</label>
+        <span>support@velora.com</span>
+      </div>
+
+      <div class="info-item">
+        <label>Phone:</label>
+        <span>+91 9970315044</span>
+      </div>
+
+      <div class="info-item">
+        <label>Location:</label>
+        <span>Mumbai, Maharashtra, India</span>
+      </div>
+
+      <div class="info-item">
+        <label>Available:</label>
+        <span>Mon – Sat | 10am – 7pm</span>
+      </div>
+    </div>
+  </div>
+
+  <center><h1>📍 Find Us on Map</h1></center>
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609851124!2d72.74109867389109!3d19.08219783933092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63fb43b3e2b%3A0x6c3f4e7f52f7ed23!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1691061279920!5m2!1sen!2sin" 
+      allowfullscreen=""  
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Velora. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

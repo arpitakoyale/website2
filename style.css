@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: black;
+  color: #222;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background: black;
+  color: white;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D4AF37; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hero {
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+}
+.hero h1 {
+  font-size: 25px;
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+.product img {
+  width: 150px;   
+  height: 180px;  
+  object-fit: cover;  
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;  
+}
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: #444;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+  margin-top: 40px;
+}
